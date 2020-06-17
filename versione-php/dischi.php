@@ -88,11 +88,11 @@ var_dump($dischi);
 
                 <<?php  foreach ($dischi as $disco) { ?>
                     <div class="disco">
-                        <img  src="<?php $disco['poster'] ?>">
-                        <h1><<?php $disco['title'] ?></h1>
-                        <h2><<?php $disco['author'] ?></h2>
-                        <h3><<?php $disco['genre'] ?></h3>
-                        <h4><<?php $disco['year'] ?></h4>
+                        <img  src="<?php echo $disco['poster']; ?>">
+                        <p>Titolo: <?php echo $disco['title']; ?></p>
+                        <p>Autore: <?php echo $disco['author']; ?></p>
+                        <p>Genere: <?php echo $disco['genre'] ?></p>
+                        <p>Anno: <?php echo $disco['year']; ?></p><hr>
                     </div>
                     <?php } ?>
             </div>
