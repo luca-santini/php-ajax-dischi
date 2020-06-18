@@ -4,18 +4,19 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
         <title>Dischi API</title>
     </head>
     <body>
-           <div id="dischi">
+           <div class="cds-container">
 
                 <?php  foreach ($dischi as $disco) { ?>
-                    <div class="disco">
+                    <div class="cd">
                         <img  src="<?php echo $disco['poster']; ?>">
-                        <p>Titolo: <?php echo $disco['title']; ?></p>
-                        <p>Autore: <?php echo $disco['author']; ?></p>
-                        <p>Genere: <?php echo $disco['genre']; ?></p>
-                        <p>Anno: <?php echo $disco['year']; ?></p><hr>
+                        <span> <?php echo $disco['title']; ?></span>
+                        <span> <?php echo $disco['author']; ?></span>
+                        <span> <?php echo $disco['genre']; ?></span>
+                        <span> <?php echo $disco['year']; ?></span>
                     </div>
                     <?php } ?>
             </div>
