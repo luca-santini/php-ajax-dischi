@@ -7,9 +7,7 @@
 body {
     background-color: #1E2D3B;
 }
-
-
-.cds-container {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +15,7 @@ body {
     padding: 100px 0;
 }
 
-.cd {
+#cds-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
